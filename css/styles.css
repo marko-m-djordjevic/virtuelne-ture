@@ -46,7 +46,7 @@ body {
 
 .hamburger {
   position: absolute;
-  top: 0.5rem;
+  top: 110px;
   right: 60px;
   z-index: 50;
   display: flex;
