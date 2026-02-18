@@ -78,12 +78,10 @@ body {
 .menu-sidebar {
   position: absolute;
   right: 60px;
-  top: 52px;
+  top: 180px;
   width: 0;
   max-width: 350px;
   overflow: hidden;
-
-  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
   transition: width 200ms ease;
 }
 
