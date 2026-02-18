@@ -29,8 +29,13 @@
 
   function showPopup(location) {
     popupName.textContent = location.name;
-    popupImage.src = location.image;
-    popupImage.alt = location.name;
+    if (location.image && location.image.trim()) {
+      popupImage.src = location.image;
+      popupImage.alt = location.name;
+      popupImage.hidden = false;
+    } else {
+      popupImage.hidden = true;
+    }
     popupDescription.innerHTML = location.description;
     popupButton.href = location.link;
     popupButton.textContent = "ПОГЛЕДАЈ ВИРТУЕЛНУ ТУРУ";
