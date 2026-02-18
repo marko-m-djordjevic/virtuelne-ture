@@ -116,7 +116,7 @@
   }
 
   function init() {
-    fetch("assets/data.json")
+    fetch("assets/data.json?v=1.0.3")
       .then(function (res) {
         return res.json();
       })
