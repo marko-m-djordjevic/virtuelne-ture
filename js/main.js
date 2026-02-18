@@ -32,9 +32,10 @@
     if (location.image && location.image.trim()) {
       popupImage.src = location.image;
       popupImage.alt = location.name;
-      popupImage.hidden = false;
+      popupImage.style.display = "";
     } else {
-      popupImage.hidden = true;
+      popupImage.removeAttribute("src");
+      popupImage.style.display = "none";
     }
     popupDescription.innerHTML = location.description;
     popupButton.href = location.link;
